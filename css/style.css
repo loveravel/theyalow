@@ -60,3 +60,108 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/* page-header */
+
+.page-header {
+  position: relative;
+  z-index: 1;
+  background-color: #f0c106;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.58);
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 640px;
+  margin: 0 auto;
+}
+
+.page-header__logo {
+  position: relative;
+  padding-top: 11px;
+  padding-bottom: 9px;
+  padding-left: 12px;
+  padding-right: 17px;
+  background-color: #4c4c4c;
+}
+
+.page-header__logo::after {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+}
+
+/* nav */
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__item {
+  font-size: 19px;
+  position: relative;
+  padding-top: 19px;
+  padding-bottom: 19px;
+}
+
+.nav__item:not(:last-child) {
+  border-right: 1px solid #d9af05;
+}
+
+.nav__item::before {
+  content: '';
+  position: absolute;
+  top: 18px;
+}
+
+.nav__item--about-us {
+  padding-right: 22px;
+  padding-left: 59px;
+}
+
+.nav__item--about-us::before {
+  left: 23px;
+  height: 22px;
+  width: 24px;
+  background: url(../img/about-us.svg) no-repeat;
+}
+
+.nav__item--services {
+  padding-left: 38px;
+  padding-right: 13px;
+}
+
+.nav__item--services::before {
+  left: 8px;
+  height: 22px;
+  width: 22px;
+  background: url(../img/services.svg) no-repeat;
+}
+
+.nav__item--contact {
+  padding-left: 52px;
+}
+
+.nav__item--contact::before {
+  left: 12px;
+  height: 21px;
+  width: 28px;
+  background: url(../img/contact.svg) no-repeat;
+}
+
+.nav__link {
+  letter-spacing: 0.19px;
+  text-transform: uppercase;
+  color: #9b7d08;
+}
