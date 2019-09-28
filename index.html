@@ -39,137 +39,151 @@
   </header>
   <main>
     <h1 class="visually-hidden">THAYALLOW Main Page</h1>
+
     <section class="promo">
       <div class="promo__wrapper">
-        <video
-          class="promo__video"
-          poster="./img/video-poster-mobile.jpg"
-        >
-        </video>
-        <div class="promo__video-controls video-controls">
-          <span class="video-controls__play-pause video-controls__play-pause--big"></span>
-          <div class="video-controls__line">
-            <span class="video-controls__play-pause video-controls__play-pause--small"></span>
-            <div class="video-controls__progress progress">
-              <span class="progress__current"></span>
-              <span class="progress__total"></span>
+        <div class="promo__wrapper">
+          <video
+            class="promo__video"
+            poster="./img/video-poster-mobile.jpg"
+          >
+          </video>
+          <div class="promo__video-controls video-controls">
+            <span class="video-controls__play-pause video-controls__play-pause--big"></span>
+            <div class="video-controls__line">
+              <span class="video-controls__play-pause video-controls__play-pause--small"></span>
+              <div class="video-controls__progress progress">
+                <span class="progress__current"></span>
+                <span class="progress__total"></span>
+              </div>
+              <span class="video-controls__volume"></span>
             </div>
-            <span class="video-controls__volume"></span>
+          </div>
+          <p class="promo__description">The Cool</p>
+          <p class="promo__description">The Minimal</p>
+          <div class="slide-controls">
+            <button class="slide-controls__button slide-controls__button--next">
+              <span class="visually-hidden">Next</span>
+            </button>
+            <button class="slide-controls__button slide-controls__button--prev">
+              <span class="visually-hidden">Prev</span>
+            </button>
           </div>
         </div>
-        <p class="promo__description">The Cool</p>
-        <p class="promo__description">The Minimal</p>
-        <div class="slide-controls">
-          <button class="slide-controls__button slide-controls__button--next">
-            <span class="visually-hidden">Next</span>
-          </button>
-          <button class="slide-controls__button slide-controls__button--prev">
-            <span class="visually-hidden">Prev</span>
-          </button>
-        </div>
       </div>
     </section>
+
     <section class="features">
-      <ul class="features__list">
-        <li class="features__item">Better Design</li>
-        <li class="features__item">Customize</li>
-        <li class="features__item">Its Free</li>
-      </ul>
-    </section>
-    <section class="twitter-posts">
-      <div class="twitter-posts__media-tweet media-tweet">
-        <p class="media-tweet__text">
-          Lorem ipsum dolor sit amet,
-          consectetur adipisicing elit,
-          sed do eiusmod tempor incididunt ut
-        </p>
-        <button class="media-tweet__button-add">
-          <span class="visually-hidden">Add Comment</span>
-        </button>
-        <video
-          class="media-tweet__video"
-          poster="./img/media-tweet-poster.png"
-        >
-        </video>
-        <span class="media-tweet__video-control"></span>
+      <div class="features__wrapper">
+        <ul class="features__list">
+          <li class="features__item">Better Design</li>
+          <li class="features__item">Customize</li>
+          <li class="features__item">Its Free</li>
+        </ul>
       </div>
-      <ul class="twitter-posts__list">
-        <li class="twitter-posts__item twitter-post">
-          <blockquote class="twitter-post__wrapper">
-            <p class="twitter-post__text">Daily Mobile UI Design Inspiration #1</p>
-            <cite class="twitter-post__author">via @cssauthor</cite>
-          </blockquote>
-        </li>
-        <li class="twitter-posts__item twitter-post">
-          <blockquote class="twitter-post__wrapper">
-            <p class="twitter-post__text">Daily Mobile UI Design Inspiration #1</p>
-            <cite class="twitter-post__author">via @cssauthor</cite>
-          </blockquote>
-        </li>
-        <li class="twitter-posts__item twitter-post">
-          <blockquote class="twitter-post__wrapper">
-            <p class="twitter-post__text">Daily Mobile UI Design Inspiration #1</p>
-            <cite class="twitter-post__author">via @cssauthor</cite>
-          </blockquote>
-        </li>
-      </ul>
-      <form class="twitter-posts__post-form post-form" action="post">
-        <input class="post-form__input" type="text" />
-        <button class="post-form__submit" type="submit">
-          <span class="post-form__button-text">Tweet</span>
-        </button>
-      </form>
     </section>
+
+    <section class="twitter-posts">
+      <div class="twitter-posts__wrapper">
+        <div class="twitter-posts__media-tweet media-tweet">
+          <p class="media-tweet__text">
+            Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut
+          </p>
+          <button class="media-tweet__button-add">
+            <span class="visually-hidden">Add Comment</span>
+          </button>
+          <video
+            class="media-tweet__video"
+            poster="./img/media-tweet-poster.png"
+          >
+          </video>
+          <span class="media-tweet__video-control"></span>
+        </div>
+        <ul class="twitter-posts__list">
+          <li class="twitter-posts__item twitter-post">
+            <blockquote class="twitter-post__wrapper">
+              <p class="twitter-post__text">Daily Mobile UI Design Inspiration #1</p>
+              <cite class="twitter-post__author">via @cssauthor</cite>
+            </blockquote>
+          </li>
+          <li class="twitter-posts__item twitter-post">
+            <blockquote class="twitter-post__wrapper">
+              <p class="twitter-post__text">Daily Mobile UI Design Inspiration #1</p>
+              <cite class="twitter-post__author">via @cssauthor</cite>
+            </blockquote>
+          </li>
+          <li class="twitter-posts__item twitter-post">
+            <blockquote class="twitter-post__wrapper">
+              <p class="twitter-post__text">Daily Mobile UI Design Inspiration #1</p>
+              <cite class="twitter-post__author">via @cssauthor</cite>
+            </blockquote>
+          </li>
+        </ul>
+        <form class="twitter-posts__post-form post-form" action="post">
+          <input class="post-form__input" type="text" />
+          <button class="post-form__submit" type="submit">
+            <span class="post-form__button-text">Tweet</span>
+          </button>
+        </form>
+      </div>
+    </section>
+
     <section class="info-features">
-      <span class="info-features__promo-text">Its 100% free</span>
-      <ul class="info-features__screens">
-        <li class="info-features__screen">
-          <img class="info-features__screen-img"
-            src="./img/desktop-screen.png"
-            alt="desktop screen image"
-          />
-        </li>
-        <li class="info-features__screen">
-          <img class="info-features__screen-img"
-            src="./img/tablet-screen.png"
-            alt="tablet screen image"
-          />
-        </li>
-        <li class="info-features__screen">
-          <img class="info-features__screen-img"
-            src="./img/mobile-screen.png"
-            alt="mobile screen image"
-          />
-        </li>
-      </ul>
-      <ul class="info-features__list">
-        <li class="info-features__item">
-            Sed ut perspiciatis unde omnis
-        </li>
-        <li class="info-features__item">
-            Lorem ipsum dolor sit amet, consectetur adipisicing
-        </li>
-        <li class="info-features__item">
-            Sed ut perspiciatis unde omnis
-        </li>
-        <li class="info-features__item">
-            Lorem ipsum dolor sit amet, consectetur adipisicing
-        </li>
-      </ul>
+      <div class="info-features__wrapper">
+        <span class="info-features__promo-text">Its 100% free</span>
+        <ul class="info-features__screens">
+          <li class="info-features__screen">
+            <img class="info-features__screen-img"
+              src="./img/desktop-screen.png"
+              alt="desktop screen image"
+            />
+          </li>
+          <li class="info-features__screen">
+            <img class="info-features__screen-img"
+              src="./img/tablet-screen.png"
+              alt="tablet screen image"
+            />
+          </li>
+          <li class="info-features__screen">
+            <img class="info-features__screen-img"
+              src="./img/mobile-screen.png"
+              alt="mobile screen image"
+            />
+          </li>
+        </ul>
+        <ul class="info-features__list">
+          <li class="info-features__item">
+              Sed ut perspiciatis unde omnis
+          </li>
+          <li class="info-features__item">
+              Lorem ipsum dolor sit amet, consectetur adipisicing
+          </li>
+          <li class="info-features__item">
+              Sed ut perspiciatis unde omnis
+          </li>
+          <li class="info-features__item">
+              Lorem ipsum dolor sit amet, consectetur adipisicing
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
-    <picture>
-      <source
-        media="(min-width: 1300px)"
-        srcset="./img/logo-desktop-small.png"
-      />
-      <img
-        class="page-footer__logo"
-        src="./img/logo-mobile-small.png"
-        alt="logotype THEYALOW"
-      />
-    </picture>
+    <div class="page-footer__wrapper">
+      <picture>
+        <source
+          media="(min-width: 1300px)"
+          srcset="./img/logo-desktop-small.png"
+        />
+        <img
+          class="page-footer__logo"
+          src="./img/logo-mobile-small.png"
+          alt="logotype THEYALOW"
+        />
+      </picture>
+    </div>
   </footer>
 </body>
 </html>
