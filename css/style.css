@@ -1,19 +1,19 @@
 @font-face {
-  font-family: OpenSans Regular;
+  font-family: "Open Sans";
   src: url(../fonts/open-sans-regular.woff)
 }
 
 @font-face {
-  font-family: PTSans NarrowBold;
+  font-family: "PTSans Narrow Bold";
   src: url(../fonts/pt-sans-narrow-bold.woff);
 }
 
 @font-face {
-  font-family: SegoeWP;
+  font-family: "Segoe WP";
   src: url(../fonts/segoe-wp.woff);
 }
 
 @font-face {
-  font-family: SegoeWP Light;
+  font-family: "Segoe WP Light";
   src: url(../fonts/segoe-wp-light.woff);
 }
