@@ -134,7 +134,10 @@ input[type="radio"].visually-hidden {
   left: 23px;
   height: 22px;
   width: 24px;
-  background: url(../img/about-us.svg) no-repeat;
+  background-image: url(../img/about-us.svg);
+  background-repeat:  no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
 }
 
 .nav__item--services {
@@ -146,7 +149,10 @@ input[type="radio"].visually-hidden {
   left: 8px;
   height: 22px;
   width: 22px;
-  background: url(../img/services.svg) no-repeat;
+  background-image: url(../img/services.svg);
+  background-repeat:  no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
 }
 
 .nav__item--contact {
@@ -157,7 +163,10 @@ input[type="radio"].visually-hidden {
   left: 12px;
   height: 21px;
   width: 28px;
-  background: url(../img/contact.svg) no-repeat;
+  background-image: url(../img/contact.svg);
+  background-repeat:  no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
 }
 
 .nav__link {
@@ -681,4 +690,83 @@ input[type="radio"].visually-hidden {
   margin-left: 65px;
   padding-top: 6px;
   padding-bottom: 3px;
+}
+
+/* desktop styles */
+
+@media screen and (min-width: 1300px) {
+
+  /* page-header */
+
+  .page-header {
+    background: url();
+  }
+
+  .page-header__wrapper {
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 1020px;
+    padding: 0 140px;
+  }
+
+  .page-header__logo {
+    padding: 0;
+    margin-top: 28px;
+    background: none;
+  }
+
+  .page-header__logo::after {
+    background: none;
+  }
+
+  /* nav */
+
+  .nav__item {
+    margin-top: 71px;
+    padding-top: 9px;
+    padding-bottom: 11px;
+    padding-right: 21px;
+    background-color: #f5c506;
+  }
+
+  .nav__item::before {
+    top: 11px;
+  }
+
+  .nav__item--about-us {
+    padding-left: 70px;
+  }
+
+  .nav__item--about-us::before {
+    left: 39px;
+    height: 19px;
+    width: 21px;
+  }
+
+  .nav__item--services {
+    padding-left: 42px;
+    padding-right: 18px;
+  }
+
+  .nav__item--services::before {
+    left: 14px;
+    height: 19px;
+    width: 19px;
+  }
+
+  .nav__item--contact {
+    padding-left: 49px;
+  }
+
+  .nav__item--contact::before {
+    left: 17px;
+    height: 18px;
+    width: 24px;
+  }
+
+  .nav__link {
+    font-family: 'Segoe WP';
+    font-size: 17px;
+    letter-spacing: 0.17px;
+  }
 }
