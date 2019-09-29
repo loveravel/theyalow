@@ -9,6 +9,11 @@
 }
 
 @font-face {
+  font-family: 'PTSans Regular';
+  src: url(../fonts/pt-sans-regular.woff);
+}
+
+@font-face {
   font-family: 'Segoe WP';
   src: url(../fonts/segoe-wp.woff);
 }
@@ -465,6 +470,11 @@ input[type="radio"].visually-hidden {
   background: url(../img/twitter-icon.svg) no-repeat;
 }
 
+.twitter-posts__item--more,
+.twitter-posts__item--count {
+  display: none;
+}
+
 /* media-tweet */
 
 .media-tweet {
@@ -497,24 +507,33 @@ input[type="radio"].visually-hidden {
 }
 
 .media-tweet__button-add {
-  position: relative;
+  position: absolute;
+  bottom: 22px;
+  right: 12px;
   background-color: transparent;
   border: none;
   opacity: 0.7;
 }
 
+.media-tweet__date {
+  display: none;
+}
+
+.twitter-posts__more::before,
+.twitter-posts__more::after,
 .media-tweet__button-add::before,
 .media-tweet__button-add::after {
   content: '';
   position: absolute;
-  bottom: 5px;
-  right: -9px;
+  bottom: 0;
+  right: 0;
   width: 10px;
   height: 2px;
   box-shadow: 0 0 2px #ffffff;
   background-color: #ffffff;
 }
 
+.twitter-posts__more::before,
 .media-tweet__button-add::before {
   transform: rotate(90deg);
 }
@@ -956,5 +975,150 @@ input[type="radio"].visually-hidden {
     left: 119px;
     width: 81px;
     height: 83px;
+  }
+
+  /* twitter-posts */
+
+  .twitter-posts {
+    background-image: url(../img/bg-twitter-posts.png);
+    background-position: center;
+  }
+
+  .twitter-posts__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 1020px;
+    padding: 0 140px;
+  }
+
+  .twitter-posts__title {
+    font-family: 'PTSans Regular';
+    font-size: 37px;
+    font-weight: 300;
+    letter-spacing: 0.37px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 35px;
+    margin-bottom: 33px;
+    margin-left: 1px;
+    color: #ffffff;
+  }
+
+  .twitter-posts__list {
+    width: 329px;
+    height: 233px;
+    margin: 0;
+    margin-right: 2px;
+    padding: 0;
+    background-color: #ec9e03;
+  }
+
+  .twitter-posts__list::before {
+    top: 59px;
+    left: 83px;
+    width: 163px;
+    height: 133px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+  }
+
+  .twitter-posts__item--count {
+    font-family: 'Segoe Wp Light';
+    font-size: 25px;
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    display: inline;
+    color: #ffffff;
+  }
+
+  .twitter-posts__item--more {
+    position: relative;
+    display: block;
+  }
+
+  .twitter-posts__more {
+    position: absolute;
+    top: 213px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+  }
+
+  /* media-tweet */
+
+  .media-tweet {
+    max-width: 564px;
+    margin-right: 34px;
+    margin-bottom: 165px;
+  }
+
+  .media-tweet__comment {
+    display: block;
+    box-sizing: padding-box;
+    min-width: 311px;
+    margin: 0;
+    margin-left: -9px;
+    padding-top: 16px;
+    padding-left: 30px;
+    padding-right: 0;
+  }
+
+  .media-tweet__text {
+    line-height: 38px;
+  }
+
+  .media-tweet__button-add {
+    bottom: 18px;
+    right: 14px;
+  }
+
+  .media-tweet__date {
+    position: absolute;
+    bottom: -85px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #ddb101;
+  }
+
+  .media-tweet__day {
+    font-size: 51px;
+    font-weight: bold;
+    margin-top: 3px;
+    margin-left: 30px;
+    margin-right: 24px;
+    letter-spacing: 0.51px;
+    color: #ffffff;
+  }
+
+  .media-tweet__mounth {
+    font-size: 21px;
+    letter-spacing: 0.21px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    top: -5px;
+    left: 3px;
+    color: #b26529;
+  }
+
+  .media-tweet__video-control {
+    top: 40%;
+    right: 41px;
+  }
+
+  /* twitter-post */
+
+  .twitter-post {
+    display: none;
+  }
+
+  /* post-form */
+
+  .post-form {
+    display: none;
   }
 }
