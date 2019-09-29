@@ -825,18 +825,17 @@ input[type="radio"].visually-hidden {
     padding-bottom: 68px;
   }
 
-  .promo__wrapper::before {
+  .promo::before {
     content: '';
     position: absolute;
     z-index: -1;
-    top: -114px;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
     height: 566px;
     background-image: url(../img/bg-desktop-promo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center;
   }
 
   .promo__video-container {
