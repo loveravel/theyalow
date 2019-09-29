@@ -25,7 +25,7 @@ body {
   font-weight: 400;
   margin: 0;
   padding: 0;
-  background-color: rgb(255, 255, 255);
+  background-color: #4c4c4c;
 }
 
 h1,
@@ -167,6 +167,10 @@ input[type="radio"].visually-hidden {
 }
 
 /* promo */
+
+.promo {
+  background-color: #ffffff;
+}
 
 .promo__wrapper {
   position: relative;
@@ -322,8 +326,9 @@ input[type="radio"].visually-hidden {
   position: relative;
   z-index: 1;
   margin-top: -7px;
-  margin-bottom: 15px;
+  padding-bottom: 15px;
   background-image: url(../img/bg-features.png);
+  background-color: #ffffff;
 }
 
 .features::before {
@@ -403,6 +408,10 @@ input[type="radio"].visually-hidden {
 }
 
 /* twitter-posts */
+
+.twitter-posts {
+  background-color: #ffffff;
+}
 
 .twitter-posts__wrapper {
   display: flex;
