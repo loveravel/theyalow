@@ -18,6 +18,11 @@
   src: url(../fonts/segoe-wp-light.woff);
 }
 
+@font-face {
+  font-family: 'Asap Regular';
+  src: url(../fonts/Asap-Regular.woff);
+}
+
 /* Scaffolding */
 
 body {
@@ -187,9 +192,11 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
 }
 
-.promo__description {
+.promo__descriptions {
   display: none;
 }
+
+/* slide-controls */
 
 .slide-controls {
   display: none;
@@ -700,6 +707,7 @@ input[type="radio"].visually-hidden {
 
   .page-header {
     background: url();
+    box-shadow: none;
   }
 
   .page-header__wrapper {
@@ -768,5 +776,105 @@ input[type="radio"].visually-hidden {
     font-family: 'Segoe WP';
     font-size: 17px;
     letter-spacing: 0.17px;
+  }
+
+  /* promo */
+
+  .promo {
+    background-color: transparent;
+  }
+
+  .promo__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1300px;
+    padding-top: 54px;
+    padding-bottom: 78px;
+  }
+
+  .promo__wrapper::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -114px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 566px;
+    background-image: url(../img/bg-desktop-promo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .promo__video {
+    width: 549px;
+    height: 327px;
+    margin-left: 150px;
+    object-fit: cover;
+    object-position: -54px;
+  }
+
+  .promo__descriptions {
+    position: relative;
+    top: -17px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 103px;
+    padding-right: 9px;
+  }
+
+  .promo__description {
+    font-family: 'Asap Regular';
+    font-size: 63px;
+    letter-spacing: 0.63px;
+    text-transform: uppercase;
+    position: relative;
+    left: -6px;
+    margin: 0;
+    padding: 0;
+    color: #f5c506;
+  }
+
+  .promo__description:nth-child(2n) {
+    top: 4px;
+    left: 2px;
+    color: #ffffff;
+  }
+
+  /* slide-controls */
+
+  .slide-controls {
+    display: block;
+  }
+
+  .slide-controls__button {
+    position: absolute;
+    top: 186px;
+    width: 32px;
+    height: 57px;
+    border: none;
+    background-color: #f5c506;
+  }
+
+  .slide-controls__button--prev {
+    left: 0;
+    transform: rotateY(180deg);
+    opacity: 0.72;
+  }
+
+  .slide-controls__button--next {
+    right: 0;
+  }
+
+  .slide-controls__button::before {
+    content: '';
+    position: absolute;
+    top: 18px;
+    right: 8px;
+    width: 13px;
+    height: 19px;
+    background: url(../img/arrow-icon.svg) no-repeat;
   }
 }
