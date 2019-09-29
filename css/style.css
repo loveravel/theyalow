@@ -165,3 +165,153 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   color: #9b7d08;
 }
+
+/* promo */
+
+.promo__wrapper {
+  position: relative;
+  width: 640px;
+  margin: 0 auto;
+}
+
+.promo__description {
+  display: none;
+}
+
+.slide-controls {
+  display: none;
+}
+
+/* video-controls */
+
+.video-controls {
+  position: absolute;
+  bottom: 2px;
+  left: 8px;
+  width: 100%;
+  height: 100%;
+}
+
+.video-controls__play-pause--big {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 67px;
+  height: 67px;
+  background-color: rgba(245, 197, 6, 0.72);
+  border-radius: 50%;
+}
+
+.video-controls__play-pause--big::before,
+.video-controls__play-pause--small::before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  background-image: url(../img/play-button.svg);
+  background-repeat:  no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.video-controls__play-pause--big::before {
+  top: 50%;
+  left: 27px;
+  transform: translateY(-50%);
+  width: 19px;
+  height: 33px;
+}
+
+.video-controls__line {
+  position: absolute;
+  left: 0;
+  bottom: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 27px;
+}
+
+.video-controls__play-pause--small {
+  position: absolute;
+  top: 6px;
+  left: 75px;
+  width: 27px;
+  height: 27px;
+  background-color: rgba(245, 197, 6, 0.37);
+}
+
+.video-controls__play-pause--small::before {
+  top: 5px;
+  left: 10px;
+  width: 10px;
+  height: 17px;
+  opacity: 0.37;
+}
+
+.video-controls__volume {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 13px;
+  right: 64px;
+  background-image: url(../img/volume.svg);
+}
+
+/* progress */
+
+.progress__current,
+.progress__total {
+  position: relative;
+  display: block;
+  height: 12px;
+  margin-left: 16px;
+  background-color: #f5c507;
+
+}
+
+.progress__total {
+  width: 380px;
+  background-color: rgba(245, 197, 6, 0.28);
+}
+
+.progress__current {
+  top: 12px;
+  width: 167px;
+  background-color: #f5c507;
+}
+
+.progress__total::before,
+.progress__total::after,
+.progress__current::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 12px;
+  height: 12px;
+}
+
+.progress__total::before,
+.progress__total::after {
+  background-color: rgba(245, 197, 6, 0.28);
+}
+
+.progress__total::before {
+  left: -12px;
+}
+
+.progress__total::after {
+  right: -12px;
+  border-radius: 0 40% 40% 0;
+}
+
+.progress__current::before {
+  left: -12px;
+  background-color: #f5c507;
+}
+
+.progress__current::before,
+.progress__total::before {
+  border-radius: 40% 0 0 40%;
+}
