@@ -655,3 +655,21 @@ input[type="radio"].visually-hidden {
 .info-features__list {
   display: none;
 }
+
+/* page-footer */
+
+.page-footer {
+  background-color: #4c4c4c;
+  box-shadow: 0 -3px 3px rgba(0, 0, 0, 0.75);
+}
+
+.page-footer__wrapper {
+  width: 640px;
+  margin: 0 auto;
+}
+
+.page-footer__logo {
+  margin-left: 65px;
+  padding-top: 6px;
+  padding-bottom: 3px;
+}
