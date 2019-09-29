@@ -197,6 +197,10 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
 }
 
+.promo__video-container {
+  position: relative;
+}
+
 .promo__descriptions {
   display: none;
 }
@@ -834,10 +838,13 @@ input[type="radio"].visually-hidden {
     background-size: cover;
   }
 
+  .promo__video-container {
+    margin-left: 150px;
+  }
+
   .promo__video {
     width: 549px;
     height: 327px;
-    margin-left: 150px;
     object-fit: cover;
     object-position: -54px;
   }
@@ -868,6 +875,20 @@ input[type="radio"].visually-hidden {
     top: 4px;
     left: 2px;
     color: #ffffff;
+  }
+
+  /* video-controls */
+
+  .video-controls {
+    left: 0;
+  }
+
+  .video-controls__play-pause--small {
+    left: 29px;
+  }
+
+  .video-controls__volume {
+    right: 19px;
   }
 
   /* slide-controls */
