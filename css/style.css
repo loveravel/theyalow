@@ -1193,4 +1193,15 @@ input[type="radio"].visually-hidden {
     background-color: #f5c506;
     border-radius: 50%;
   }
+
+  /* page-footer */
+
+  .page-footer__wrapper {
+    width: 1020px;
+    padding: 0 140px;
+  }
+
+  .page-footer__logo {
+    margin-left: 0;
+  }
 }
