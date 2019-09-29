@@ -985,6 +985,7 @@ input[type="radio"].visually-hidden {
   }
 
   .twitter-posts__wrapper {
+    position: relative;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
@@ -1045,6 +1046,32 @@ input[type="radio"].visually-hidden {
     right: 10px;
     border: none;
     background-color: transparent;
+  }
+
+  .twitter-posts__bar {
+    position: absolute;
+    bottom: 36px;
+    left: 213px;
+  }
+
+  .twitter-posts__total,
+  .twitter-posts__current {
+    position: absolute;
+    top: 0;
+    height: 15px;
+    border-radius: 10px;
+  }
+
+  .twitter-posts__total {
+    left: 0;
+    width: 896px;
+    background-color: rgba(255, 255, 255, 0.48);
+  }
+
+  .twitter-posts__current {
+    left: 247px;
+    width: 197px;
+    background-color: #ec9e03;
   }
 
   /* media-tweet */
