@@ -900,6 +900,7 @@ input[type="radio"].visually-hidden {
 
   .slide-controls__button {
     position: absolute;
+    z-index: 10;
     top: 186px;
     width: 32px;
     height: 57px;
@@ -1262,3 +1263,75 @@ input[type="radio"].visually-hidden {
     margin-left: 0;
   }
 }
+
+/* interactive */
+
+.nav__item,
+.video-controls__play-pause,
+.video-controls__volume,
+.progress,
+.slide-controls__button,
+.media-tweet__button-add::before,
+.media-tweet__button-add::after,
+.twitter-posts__more::before,
+.twitter-posts__more::after,
+.media-tweet__video-control,
+.twitter-posts__bar,
+.post-form__input,
+.post-form__submit {
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.nav__item:hover,
+.nav__item:focus {
+  position: relative;
+  z-index: 1;
+}
+
+.nav__item:hover,
+.nav__item:focus,
+.video-controls__play-pause:hover,
+.video-controls__play-pause:focus
+.slide-controls__button:hover,
+.slide-controls__button:focus,
+.media-tweet__video-control:hover,
+.media-tweet__video-control:focus,
+.post-form__input:hover,
+.post-form__submit:hover,
+.post-form__input:focus,
+.post-form__submit:focus {
+  box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+
+.media-tweet__button-add:hover::before,
+.media-tweet__button-add:focus::before,
+.media-tweet__button-add:hover::after,
+.media-tweet__button-add:focus::after,
+.twitter-posts__more:hover::before,
+.twitter-posts__more:hover::after,
+.twitter-posts__more:focus:before,
+.twitter-posts__more:focus:after {
+  width: 20px;
+  height: 4px;
+  transition: 0.5s;
+}
+
+.nav__item:active,
+.video-controls__play-pause:active,
+.video-controls__volume:active,
+.slide-controls__button:active,
+.media-tweet__button-add:active,
+.twitter-posts__more:active,
+.media-tweet__video-control:active,
+.post-form__input:active,
+.post-form__submit:active {
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+/*
+.video-controls__volume:hover,
+.video-controls__volume:focus
+*/
