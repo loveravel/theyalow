@@ -882,7 +882,9 @@ input[type="radio"].visually-hidden {
 
   .features {
     margin: 0;
+    padding: 0;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
   }
 
   .features::before {
@@ -903,6 +905,7 @@ input[type="radio"].visually-hidden {
     letter-spacing: 0.27px;
     box-sizing: border-box;
     padding-top: 147px;
+    padding-bottom: 34px;
   }
 
   .features__item:not(:nth-child(2n)) {
